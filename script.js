@@ -2,7 +2,7 @@ let myArray = [];
 let startBtn = document.querySelector("#startBtn");
 let swapWordBtn = document.querySelector("#swapBtn");
 let displayWord = document.getElementById('displayWords');
-let reverseWord = document.getElementById('reverseWord');
+let changedWord = document.getElementById('changedWords');
 
 startBtn.addEventListener('click', askQuestion);
 
@@ -42,9 +42,8 @@ function hideStartBtn() {
 
 
 function swapCSS() {
-    displayWord.style.color = "blue";
-    displayWord.style.backgroundColor = "yellow";
-    displayWord.style.fontSize = "larger";
+    changedWord.style.display = "block";
+    displayWord.style.display = "none";
 }
 
 
@@ -61,8 +60,7 @@ swapBtn.addEventListener('click', function() {
 
     swapCSS();
 
-    document.getElementById("displayWords").appendChild(
-    makeUL(swapLettersArray));
+    changedWord.appendChild(makeUL(swapLettersArray));
       
 });
 

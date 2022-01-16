@@ -1,11 +1,56 @@
-#start{
+#btn{
     text-align:center;
 }
+
+#startBtn {
+    border-radius: 2px;
+    border:1px solid white;
+    padding: 12px 22px;
+    font-size:13px;
+    width:auto;
+    cursor: pointer;
+    transition: 1s ease;
+    
+    
+}
+
+#startBtn:hover{
+    border: 1px solid #f44336;
+    color:white;
+    background: #f44336;
+
+    
+    
+}
+
 #displayWords {
     border: 2px solid black;
-    width:70vw;
-    height:30vh;
+    margin: 50px auto;
+	width: 600px;
+	height: 450px;
+	position: relative;
+    
 }
+
+#changedWords{
+    border:2px solid blue;
+    position:relative;
+    margin: 50px auto;
+	width: 600px;
+	height: 450px;
+    display:none; 
+	position: relative;
+    background-color:yellow;
+   
+    
+
+   
+}
+
+#changedWords li {
+    font-size:2.5rem;
+}
+
 
 
 
