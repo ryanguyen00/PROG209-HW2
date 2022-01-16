@@ -1,0 +1,14 @@
+#start{
+    text-align:center;
+}
+#displayWords {
+    border: 2px solid black;
+    width:70vw;
+    height:30vh;
+}
+
+
+
+#swapBtn {
+    display:none;
+}
